@@ -69,17 +69,9 @@ $livroDidatico->setNivel(['médio', 'superior']);
 
 <!-- Testes do exercício 3 -->
 <h3>Resultados Exercício 3</h3>
-
-<p>Técnico: 
-<?=$livroTecnico->formataTitulo( $livroTecnico->getTitulo() )?>  </p>
-
-<p>Programação: 
-<?=$livroProgramacao->formataTitulo( $livroProgramacao->getTitulo() )?>  
-</p>
-
-<p>Didático: 
-<?=$livroDidatico->formataTitulo( $livroDidatico->getTitulo() )?>  
-</p>
+<p>Técnico: <?=$livroTecnico->formataTitulo()?>  </p>
+<p>Programação: <?=$livroProgramacao->formataTitulo()?> </p>
+<p>Didático: <?=$livroDidatico->formataTitulo()?>  </p>
 
 
 
