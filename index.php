@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 02 (correção)</title>
+    <title>Exercício 03 (correção)</title>
 </head>
 <body>
-    <h1>Exercício 02</h1>
+    <h1>Exercício 03</h1>
     <hr>
 <?php
 require_once "src/Tecnico.php";
@@ -65,6 +65,23 @@ $livroDidatico->setNivel(['médio', 'superior']);
 <?php if($livroDidatico->getPaginas() > 100){ ?>
         <p>Traga uma mochila</p>
 <?php } ?>
+
+
+<!-- Testes do exercício 3 -->
+<h3>Resultados Exercício 3</h3>
+
+<p>Técnico: 
+<?=$livroTecnico->formataTitulo( $livroTecnico->getTitulo() )?>  </p>
+
+<p>Programação: 
+<?=$livroProgramacao->formataTitulo( $livroProgramacao->getTitulo() )?>  
+</p>
+
+<p>Didático: 
+<?=$livroDidatico->formataTitulo( $livroDidatico->getTitulo() )?>  
+</p>
+
+
 
 
 
