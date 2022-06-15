@@ -1,18 +1,23 @@
-# Exercício 02 de PHP com POO
+# Exercício 03 de PHP com POO - Polimorfismo
 
-## 1) Analise o diagrama abaixo
+## 1) Analise as notas no diagrama abaixo
 
-![Diagrama 2](/diagramas/02.png)
-
----
-
-## 2) Implemente a subclasse **Tecnico** (herdando tudo da superclasse **Livro**) e atribua também suas próprias propriedades e métodos.
-**Obs.: veja que a propriedade `formato` é um array com valores pré-definidos**.
+![Diagrama 3](/diagramas/03.png)
 
 ---
 
-## 3) Implemente as subclasses **Programacao** e **Didatico** (herdando tudo da subclasse **Tecnico**) e atribua também suas próprias propriedades e métodos.
+## 2) Implemente na superclasse **Livro** o método público formataTitulo.
+**Obs.: veja que este método deverá retornar o título de qualquer livro em negrito e em letras maiúsculas**.
 
 ---
 
-## 4) Na index.php, crie alguns objetos do tipo Tecnico, Programação e Didático e atribua alguns valores a eles. Em seguida, mostre alguns destes dados usando tags HTML.
+## 3) Implemente apenas na subclasse **Programacao** o método público formataTitulo.
+**Obs.: veja que este método deverá retornar o título de livros Programação em itálico e na cor azul**.
+
+---
+
+## 4) Na index.php, a partir de um objeto instanciado da classe Didático, faça o título ser formatado pelo método formataTitulo. O resultado deverá ser o título em negrito e em letras maiúsculas.
+
+---
+
+## 5) Na index.php, a partir de um objeto instanciado da classe Programação, faça o título ser formatado pelo método formataTitulo. O resultado deverá ser o título em itálico e na cor azul.
