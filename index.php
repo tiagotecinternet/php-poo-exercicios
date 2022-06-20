@@ -18,15 +18,19 @@
 
 
 <?php
-require_once "src/Tecnico.php";
-require_once "src/Programacao.php";
-require_once "src/Didatico.php";
+/* Require do autoload de classes */
+require_once "vendor/autoload.php";
+
+/* Definindo qual namespace será usado, e as classes
+pertecentes ao namespace */
+use Exercicio\{ Tecnico, Programacao, Didatico, Web };
 
 /* Usando as classes a partir de um 
 namespace comum */
-$livroTecnico = new Exercicio\Tecnico;
-$livroProgramacao = new Exercicio\Programacao;
-$livroDidatico = new Exercicio\Didatico;
+$livroTecnico = new Tecnico;
+$livroProgramacao = new Programacao;
+$livroDidatico = new Didatico;
+$livroWeb = new Web;
 
 $livroTecnico->setTitulo("Desenvolvimento de Sistemas");
 $livroTecnico->setAutor("Fulano de Tal");
