@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 03 (correção)</title>
+    <title>Desafio</title>
 </head>
 <body>
-    <h1>Exercício 03</h1>
+    <h1>Desafio</h1>
     <hr>
+    <h2>Pesquisar sobre e implementar os recursos abaixo:</h2>
+
+    <ul>
+        <li>Organização de classes usando <b>namespaces</b></li>
+        <li><b>Composer</b> (o que é, para que serve e instalação)</li>
+        <li><b>Autoload de classes</b> usando o Composer</li>
+    </ul>
+
+
 <?php
 require_once "src/Tecnico.php";
 $livroTecnico = new Tecnico;
@@ -66,17 +75,10 @@ $livroDidatico->setNivel(['médio', 'superior']);
         <p>Traga uma mochila</p>
 <?php } ?>
 
-
-<!-- Testes do exercício 3 -->
-<h3>Resultados Exercício 3</h3>
+<h3>Resultados do Exercício 3</h3>
 <p>Técnico: <?=$livroTecnico->formataTitulo()?>  </p>
 <p>Programação: <?=$livroProgramacao->formataTitulo()?> </p>
 <p>Didático: <?=$livroDidatico->formataTitulo()?>  </p>
 
-
-
-
-
-<pre> <?=var_dump($livroTecnico, $livroProgramacao, $livroDidatico)?></pre>
 </body>
 </html>
