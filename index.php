@@ -9,7 +9,6 @@
 <body>
     <h1>Desafio</h1>
     <hr>
-    <h2>Pesquisar sobre e implementar os recursos abaixo:</h2>
 
     <ul>
         <li>Organização de classes usando <b>namespaces</b></li>
