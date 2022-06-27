@@ -32,6 +32,15 @@ $livroProgramacao = new Programacao;
 $livroDidatico = new Didatico;
 $livroWeb = new Web;
 
+$livroWeb->status = true;
+echo $livroWeb->status;
+echo "<br>";
+if( $livroWeb->status ){
+    echo "livro disponível";
+} else {
+    echo "livro não está disponível";
+}
+
 $livroTecnico->setTitulo("Desenvolvimento de Sistemas");
 $livroTecnico->setAutor("Fulano de Tal");
 $livroTecnico->setPaginas(250);
